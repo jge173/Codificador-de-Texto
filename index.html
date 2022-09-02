@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<title>Codificador de Texto</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<main class="main">
+		<img src="imagens/logo.png" class="logo" onclick="home()">
+		<h1 class="titulo-principal">Criptografe suas mensagens</h1>
+		<section class="sec-principal">
+			<form action="">
+				<textarea class="entrada-texto" type="text" name="input-texto" maxlength="120" id="input-texto" placeholder="Digite seu texto"></textarea>
+				<div class="formulario">
+					<img src="imagens/!.png" class="imagem-alerta">
+					<label for="input-texto">Digite apenas letras minúsculas sem acentos.</label>
+				</div>
+				<div class="div-botoes">
+          			<input class="btn-criptografar" type="submit" value="Criptografar" id="btn-criptografar" >
+          			<input class="btn-descriptografar" type="submit" value="Descriptografar" id="btn-descriptografar">
+        		</div>
+			</form>
+		</section>
+
+		<section class="caixa-mensagem">
+			<div id="div-desaparece" class="div-caixa-mensagem">
+		        <img src="imagens/lupa.jpg"> 
+		        <h2>Nenhuma mensagem encontrada</h2>
+		        <h3>Digite um texto que você deseja criptografar ou descriptografar.</h3>
+      		</div> 
+			<div id="div-aparece">
+        		<textarea class="div-mensagem" type="text" id="mensagem" placeholder="Nenhuma mensagem"></textarea>
+        		<input class="btn-copiar" type="submit" value="Copiar" id="btn-copiar">
+      		</div>
+		</section>
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>

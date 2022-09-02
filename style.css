@@ -1,0 +1,557 @@
+* {
+	  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    background: url(imagens/bg.jpg);;
+}
+
+.main {
+	  position: relative;
+	  width: 100%;
+	  height: 100%;
+}
+
+.titulo {
+    padding: 15px;
+    width: 30vw;
+    margin: auto;
+  
+}
+
+.titulo-principal {
+    text-align: center;
+    color: rgb(81, 255, 110);
+	  padding: 30px;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px #FFFF00;
+}
+
+/*parametros do botão criptografar*/
+.btn-criptografar {
+	  display: flex;
+	  flex-direction: row;
+	  align-items: flex-start;
+	  padding: 20px;
+	  position: static;
+	  width: 250px;
+	  height: 50px;
+	  left: 0px;
+	  top: 0px;
+
+	/*cor do botão criptografar*/
+	  background: orangered;
+	  border: 2px solid #000000;
+    box-sizing: border-box;
+	  border-radius: 24px;
+
+	/* Estilização da letra dentro do botão */
+	  flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 90px;
+    flex-grow: 0;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 19px;
+    justify-content: center;
+}
+
+.btn-criptografar:hover {
+	  border-color: #006400;
+	  transform: scale(1.1);
+}
+
+
+
+	/*parametros do botão descriptografar*/
+
+.btn-descriptografar {
+	  display: flex;
+	  flex-direction: row;
+	  align-items: flex-start;
+	  padding: 20px;
+	  position: static;
+	  width: 250px;
+	  height: 50px;
+	  left: 0px;
+	  top: 0px;
+
+	  background: darkviolet;
+	  border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 24px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 30px;
+  
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 19px;
+    justify-content: center;
+}
+
+.btn-descriptografar:hover {
+	 border-color: #006400;
+	 transform: scale(1.1);
+}
+
+	/* Parametros da caixa de entrada de texto*/
+.entrada-texto {
+	  text-transform: lowercase;
+	  position: absolute;
+	  width: 700px;
+	  height: 400px;
+	  left: 15%;
+	  top: 168px;
+	  font-weight: bold;
+
+	  font-style: normal;
+	  font-weight: 600px;
+	  font-size: 32px;
+	  line-height: 220%;
+	  justify-content: baseline;
+	  resize: none;
+	  background: #ADD8E6; 
+	  border: 2px;
+    border-radius: 32px;
+    border: darkviolet;
+}
+
+::placeholder { color: #06400A;}
+
+.entrada-texto:focus {
+	  border: none;
+	  outline: none;
+}
+
+	/* Parametros da caixa de mensagem*/
+.caixa-mensagem {
+	  position: absolute;
+    width: 400px;
+    height: 600px;
+    left: 70%;
+    top: 100px;
+    padding-left: 20px;
+    padding-top: 80px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    border: darkviolet;
+}
+
+.caixa-mensagem h2 {
+	  position: static;
+    width: 336px;
+    height: 58px;
+    left: 0px;
+    top: 0px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 120%;
+
+    text-align: center;
+    color: #343A40;
+    background: #FFFFFF;
+
+    flex: none;
+  	order: 0;
+  	align-self: stretch;
+  	flex-grow: 0;
+  	margin: 20px 0px;
+}
+
+.caixa-mensagem h3 {
+	  position: static;
+    width: 336px;
+    height: 48px;
+    left: 0px;
+    top: 74px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+
+    text-align: center;
+    color: #495057;
+    background: #FFFFFF;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+.div-caixa-mensagem, .div-caixa-mensagem img {
+	  width: auto;
+	  height: 250px;
+	  padding: 40px;
+	  background: #FFFFFF;
+}
+
+.imagem-alerta{
+	  width: 20px;
+	  height: 20px;
+    position: absolute;
+    left: 70px;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+}
+
+	/* Definição da label*/
+label {
+	  position: static;
+    width: auto;
+    height: 18px;
+    left: 24px;
+    top: 0px;
+    padding-left: 100px;
+    font-weight: 600;
+
+    font-family: Inter;
+    font-style: normal;
+    font-size:20px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.formulario {
+	  display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: auto;
+    height: 18px;
+    left: 16%;
+    top: 620px;
+
+}
+
+ /* Parametros da div-botoes*/
+.div-botoes {
+	  display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 12%;
+    top: 685px;
+}
+
+.logo {
+	  position: absolute;
+    left: 30px;
+    right: 37.43%;
+    top: 25px;
+    bottom: 0%;
+}
+
+.logo:hover{
+	  transform: scale(1.1);
+}
+
+	/* Parametros da div-mensagem*/
+.div-mensagem {
+	  position: absolute;
+    width: 400px;
+    height: 781px;
+    left: 60px;
+    top: 52px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 150%;
+    resize: none;
+    color: #495057;
+    border:none;
+    background: transparent;
+}
+
+.div-mensagem:focus { 
+    border: none;
+    outline: none;
+}
+
+   /* Parametros do botão copiar*/
+.btn-copiar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    background: #228B22;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 85px;
+    top: 660px;
+  
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 24px;
+   
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 0px 8px;
+    justify-content: center;
+}
+
+.btn-copiar:hover {
+	border-color: #006400;
+	transform: scale(1.1);
+} 
+
+@media only screen and (min-width: 1224px) and (max-width: 1590px){
+  main{
+  	  height:100%;
+  }
+
+  .entrada-texto {
+  	top: 8rem;
+  	left: 7.1rem;
+  	word-wrap: break-word;
+  }
+
+  .logo {
+  	width: 3%;
+  	left: 1rem;
+  }
+
+  .div-botoes {
+  	top: 34.5rem;
+  	left: 5rem;
+  }
+
+  .formulario {
+  	left: 7.3rem;
+  	top: 32rem;
+  }
+
+  .btn-criptografar, .btn-descriptografar {
+  	font-size: 24px;
+  	height: 65px;
+  }
+
+  .caixa-mensagem {
+  	top: 1.5rem
+    height: 38rem;
+    left:56rem;
+  }
+
+  .div-caixa-mensagem {
+  	padding-top:0rem;
+    height:20rem;
+    padding-left:1rem;
+  }
+
+  .div-caixa-mensagem img {
+  	width:20rem;
+    padding-left: 3rem;
+  }
+
+   .btn-copiar{
+    top:33rem;
+    height:65px;
+    font-size:24px;
+    background: #228B22;
+  }
+
+  .div-mensagem {
+  	width: 20rem;
+    left:2.5rem;
+    word-wrap: break-word;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1023px){
+  main{
+    height:100%;
+  }
+
+  .entrada-texto {
+  	width:34rem;
+    top:10rem;
+    left:5.1rem;
+  }
+
+  .logo{
+    top: 3rem;
+    left:2.8rem;
+    width:18%;
+  }
+
+  .div-botoes {
+  	top:32.5rem;
+    left:4rem;
+  }
+
+  .formulario {
+    left:5.3rem;
+    top:30rem;
+  }
+
+  .btn-criptografar,.btn-descriptografar{
+    width: 280px;
+    font-size:24px;
+    height:65px;
+    margin: 0.5rem;
+  }
+
+  .caixa-mensagem {  
+    width:36rem;
+    left:4.3rem;
+    top:40rem;
+    padding:0;
+    height:100%
+  }
+
+  .div-caixa-mensagem {
+    padding-top:1rem;
+    height:auto;
+    border-radius: 32px;
+    padding-left: 5.5rem;
+  }
+
+  .div-caixa-mensagem h2, h3 {
+    font-size:24px;
+    width:80%;
+    margin: 0.5rem;
+    height:auto;   
+  }
+
+  .div-caixa-mensagem img{
+    display: none;
+  }
+
+  .btn-copiar{
+    top:24rem;
+    width:32rem;
+    height:65px;
+    font-size:24px;
+
+  }
+
+  .div-mensagem{
+    height:auto;
+    left:2.5rem;
+    flex: 1 1 auto;
+  }
+}
+
+@media only screen and (min-device-width : 300px) and (max-device-width : 480px){ 
+  main{
+    height:100%;
+  }
+
+  .entrada-texto {
+    width:20rem;
+    top:8rem;
+    left:1.5rem;
+    font-size: 22px;
+    word-wrap: break-word;
+  } 
+
+  .logo{
+    top: 1rem;
+    left: -1.5rem;
+    width:25%;
+  }
+
+  .div-botoes{     
+    flex-direction: column;
+    top:25.5rem;
+    left:1.5rem;
+  }
+
+  .formulario{
+    left:2.3rem;
+    top:24rem;
+  }
+
+  label{
+    font-size:12px;
+  }
+
+  .btn-criptografar,.btn-descriptografar {
+    width: 320px;
+    font-size:20px;
+    height:65px;
+    margin: 0.5rem;
+  }
+
+  .caixa-mensagem {
+    width:20rem;
+    left:2rem;
+    top:37rem;
+    padding:0;
+    height:6rem; 
+  }
+
+  .div-caixa-mensagem {
+    padding-top:0.5rem;
+    height:auto;
+    border-radius: 32px;
+    padding-left: 1.5rem;
+  }
+
+  .div-caixa-mensagem h2{
+    font-size:14px;
+    width:80%;
+    margin: 0.5rem;
+    height:100%;
+        
+  }
+
+  .div-caixa-mensagem h3{
+    font-size:12px;
+    width:80%;
+    margin: 0.5rem;
+    height:100%;
+        
+  }
+
+  .div-caixa-mensagem img{
+    display: none;
+  }
+
+  .btn-copiar{
+    top:8rem;
+    width: 320px;
+    height:62px;
+    font-size:20px;
+    left:-0.5rem;
+  }
+  .div-mensagem{
+    width: 17rem;
+    top: 0.5rem;
+    height:8rem;
+    left:1.5rem;
+    font-size: 14px;
+    word-wrap: break-word;
+  }
+} 
+
